@@ -1,0 +1,158 @@
+/* this is the css file */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #c7c4c4;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a9bccb;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+
+}
+
+.quill {
+   width: 20%; 
+}
+
+#main {
+    margin-top: 80px;
+    margin-bottom: 200px;
+
+}
+
+#site-search {
+    background-color: #a9bccb;
+flex: 1;
+height: 36px;
+width: 275px;
+padding-left: 10px;
+font-size: 16px;
+border: 1px solid rgb(219, 219, 219);
+box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+border-radius: 30px;
+}
+
+#image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.container {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.row mt-4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.graph-one {
+    width: 400px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.home-images {
+    background-color: #c7c4c4;
+    }
+
+.search-icon {
+    width: 20px;
+    cursor: pointer;
+    background-color: #a9bccb;
+    border-radius: 29px;
+    }
+
+    #button-search {
+        background-color: #fff;
+        border: none;
+        background: none;
+        padding: 0;
+        margin: 0;
+    }
+    .search-icon img {
+        width: 20px;
+    }
+
+.hamburger-menu {
+    width: 30px;
+    cursor: pointer;
+    background-color: #a9bccb;
+    border-radius: 5px;
+    margin-right: 100px;
+}
+
+#footer {
+    background-color: #a9bccb;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#about-policy {
+    text-decoration: none;
+    color: black;
+}
+
+.Quill {
+    margin-right: 500px;
+    width: 20%;
+}
+
+.button-login {
+    padding: 10px 20px;
+}
+.search-container {
+  position: relative; /* Container must be relative for absolute icon positioning */
+  display: inline-block;
+   width: 400px;                                      /* Adjust alignment as needed */
+}
+
+.search-container input[type=text] {
+    width: 300px;
+    height: 30px;
+    border-radius: 30px;
+  padding-left: 40px;
+  font-size: 16px;
+ border: none;
+ box-shadow: inset 2px 4px 6px rgba(0, 0, 0, 0.10);
+
+ 
+ 
+  /* Add padding for the icon space */
+}
+
+.search-container .fa-search {
+  position: absolute; /* Position the icon absolutely within its container */
+  left: 10px; /* Adjust as needed */
+  top: 50%; /* Center the icon vertically */
+  transform: translateY(-50%); /* Fine-tune vertical centering */
+  color: #aaa; /* Style the icon color */
+  cursor: pointer;
+}
+
+.search-bar {
+flex: 1;
+height: 36px;
+padding-left: 10px;
+font-size: 16px;
+border: 1px solid rgb(127, 14, 14);
+}
+
+
