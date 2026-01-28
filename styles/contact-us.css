@@ -85,21 +85,60 @@ body{
       outline: none;
     }
 
-    button {
+
+  .pan-btn {
       margin-top: 20px;
       width: 100%;
       padding: 12px;
-      background: linear-gradient(90deg,#4f6fd7c8, #2f7cdbc8);
       color: #fff;
       border: none;
       border-radius: 5px;
       font-size: 16px;
       cursor: pointer;
-    }
 
-    button:hover {
-      background: linear-gradient(90deg, #2f7cdbb8, #6783deb8);
-    }
+
+  /* Gradient background */
+  background: linear-gradient(
+    270deg,
+    #007bffb7,
+    #00c6ffb7,
+    #7524cbb7,
+    #007bffb7
+  );
+  background-size: 600% 600%;
+
+  /* Animation */
+  animation: bg-pan 6s ease infinite;
+}
+
+/* Background pan animation */
+@keyframes bg-pan {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+    .pan-btn {
+        animation: none;
+  }
+
+  .pan-btn:hover {
+        animation: bg-pan 3s ease infinite;
+  }
+
+  .pan-btn {
+    transition: transform 0.3s ease;
+  }
+
+  .pan-btn:hover {
+    transform: scale(1.05);
+  }
 
     .footer-text {
       text-align: center;

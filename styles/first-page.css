@@ -1,158 +1,105 @@
 /* this is the css file */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #c7c4c4;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
 }
 
-.header {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #a9bccb;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 100;
-
+.title {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.quill {
-   width: 20%; 
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
-#main {
-    margin-top: 80px;
-    margin-bottom: 200px;
-
-}
-
-#site-search {
-    background-color: #a9bccb;
-flex: 1;
-height: 36px;
-width: 275px;
-padding-left: 10px;
-font-size: 16px;
-border: 1px solid rgb(219, 219, 219);
-box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
-border-radius: 30px;
-}
-
-#image {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-}
-
-.container {
-    display: inline-block;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.row mt-4 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.graph-one {
-    width: 400px;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.home-images {
-    background-color: #c7c4c4;
-    }
-
-.search-icon {
-    width: 20px;
-    cursor: pointer;
-    background-color: #a9bccb;
-    border-radius: 29px;
-    }
-
-    #button-search {
-        background-color: #fff;
-        border: none;
-        background: none;
-        padding: 0;
-        margin: 0;
-    }
-    .search-icon img {
-        width: 20px;
-    }
-
-.hamburger-menu {
-    width: 30px;
-    cursor: pointer;
-    background-color: #a9bccb;
-    border-radius: 5px;
-    margin-right: 100px;
-}
-
-#footer {
-    background-color: #a9bccb;
-    text-align: center;
-    padding: 10px 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100;
-}
-
-#about-policy {
-    text-decoration: none;
-    color: black;
-}
-
-.Quill {
-    margin-right: 500px;
-    width: 20%;
-}
-
-.button-login {
-    padding: 10px 20px;
-}
-.search-container {
-  position: relative; /* Container must be relative for absolute icon positioning */
-  display: inline-block;
-   width: 400px;                                      /* Adjust alignment as needed */
-}
-
-.search-container input[type=text] {
-    width: 300px;
-    height: 30px;
-    border-radius: 30px;
-  padding-left: 40px;
-  font-size: 16px;
- border: none;
- box-shadow: inset 2px 4px 6px rgba(0, 0, 0, 0.10);
-
- 
- 
-  /* Add padding for the icon space */
-}
-
-.search-container .fa-search {
-  position: absolute; /* Position the icon absolutely within its container */
-  left: 10px; /* Adjust as needed */
-  top: 50%; /* Center the icon vertically */
-  transform: translateY(-50%); /* Fine-tune vertical centering */
-  color: #aaa; /* Style the icon color */
+.card {
+  perspective: 1000px;
   cursor: pointer;
 }
 
-.search-bar {
-flex: 1;
-height: 36px;
-padding-left: 10px;
-font-size: 16px;
-border: 1px solid rgb(127, 14, 14);
+.card-inner {
+  width: 100%;
+  height: 280px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.7s;
 }
 
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
 
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card-front {
+  background: #000;
+  color: white;
+}
+
+.card-front img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+}
+
+.card-front h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card-back {
+  background: #ffffff;
+  color: #333;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* JOURNAL AREA */
+.journal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.journal textarea {
+  width: 80%;
+  height: 300px;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.journal button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

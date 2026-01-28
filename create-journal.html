@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,9 +6,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/quill.svg">
     <link rel="stylesheet" href="styles/first-page.css" type="text/css">
+    <script src="script.js" defer></script>
     <title>Create journal</title>
+
 </head>
 <body>
 
+<h1 class="title">My Journal</h1>
+
+<!-- JOURNAL CARDS -->
+<div class="card-container">
+
+  <!-- CARD -->
+  <div class="card" onclick="openJournal('Task')">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" loading="lazy"/>
+        <h3>Task</h3>
+      </div>
+      <div class="card-back">
+        <p>Plan and track your daily tasks and to-do lists.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openJournal('Note')">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8" loading="lazy"/>
+        <h3>Note</h3>
+      </div>
+      <div class="card-back">
+        <p>Quick notes, thoughts, and important reminders.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openJournal('Ideas')">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" loading="lazy"/>
+        <h3>Ideas</h3>
+      </div>
+      <div class="card-back">
+        <p>Capture creative ideas before they disappear.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openJournal('Goals')">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe" loading="lazy"/>
+        <h3>Goals</h3>
+      </div>
+      <div class="card-back">
+        <p>Set goals and track your progress.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openJournal('Habit')">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://images.unsplash.com/photo-1523289333742-be1143f6b766" loading="lazy"/>
+        <h3>Habit</h3>
+      </div>
+      <div class="card-back">
+        <p>Build and reflect on daily habits.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openJournal('Memory')">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70" loading="lazy"/>
+        <h3>Memory</h3>
+      </div>
+      <div class="card-back">
+        <p>Write down moments you never want to forget.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openJournal('Mood')">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" loading="lazy"/>
+        <h3>Mood</h3>
+      </div>
+      <div class="card-back">
+        <p>Track how you feel emotionally each day.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openJournal('Event')">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" loading="lazy"/>
+        <h3>Event</h3>
+      </div>
+      <div class="card-back">
+        <p>Document important events and experiences.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="openJournal('Adventures')">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429" loading="lazy"/>
+        <h3>Adventures</h3>
+      </div>
+      <div class="card-back">
+        <p>Stories of trips, journeys, and discoveries.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- JOURNAL WRITING AREA -->
+<div id="journalArea" class="journal hidden">
+  <h2 id="journalTitle"></h2>
+  <textarea placeholder="Write your journal here..."></textarea>
+  <button onclick="closeJournal()">Close</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

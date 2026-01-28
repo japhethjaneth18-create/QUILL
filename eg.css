@@ -42,11 +42,11 @@
 
     nav {
       position: relative;
-      width: 475px;
+      width: 400px;
       height: 50px;
       background: #c4c2c2c8;
       border-radius: 10px;
-      margin-left: 490px;
+      margin-left: 480px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -76,41 +76,77 @@
       flex-shrink: 0;
     }
 
+  @media (max-width:575.98px) 
+   {
     nav a:nth-child(1):hover~span{
       left: 0px;
       cursor: pointer;
     }
     nav a:nth-child(2):hover~span{
-      left: 90px;
+      left: 80px;
     }
     nav a:nth-child(3):hover~span{
-      left: 177px;
+      left: 160px;
     }
     nav a:nth-child(4):hover~span{
-      left: 272px;
-    }
-    nav a:nth-child(5):hover~span{
-      left: 377px;
+      left: 243px;
     }
 
+  }
 
-@media (min-width:1200.1) {
-
+@media (min-width: 768px) and (max-width: 991.98px) 
+{
     nav a:nth-child(1):hover~span{
       left: 0px;
       cursor: pointer;
     }
     nav a:nth-child(2):hover~span{
-      left: -97px;
+      left: 80px;
     }
     nav a:nth-child(3):hover~span{
-      left: 173px;
+      left: 160px;
+    }
+    nav a:nth-child(4):hover~span{
+      left: 243px;
+    }
+  }
+@media (min-width: 992px) and (max-width: 1199.98px) 
+{
+  
+    nav {
+      width: 350px;
+    }
+
+    nav a:nth-child(1):hover~span{
+      left: 0;
+      cursor: pointer;
+    }
+    nav a:nth-child(2):hover~span{
+      left: 92px;
+    }
+    nav a:nth-child(3):hover~span{
+      left: 170px;
     }
     nav a:nth-child(4):hover~span{
       left: 260px;
     }
-    nav a:nth-child(5):hover~span{
-      left: 343px;
+  }
+
+@media (min-width:1200.1)
+ {
+
+    nav a:nth-child(1):hover~span{
+      left: 0px;
+      cursor: pointer;
+    }
+    nav a:nth-child(2):hover~span{
+      left: 104px;
+    }
+    nav a:nth-child(3):hover~span{
+      left: 183px;
+    }
+    nav a:nth-child(4):hover~span{
+      left: 270px;
     }
   }
     /* HERO */
@@ -234,8 +270,6 @@
     }
 
     /* JOURNAL CATEGORIES */
-    .section {
-    }
 
     .section h3 {
       font-size: 28px;
