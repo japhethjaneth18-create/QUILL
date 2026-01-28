@@ -89,7 +89,7 @@ body{
       margin-top: 20px;
       width: 100%;
       padding: 12px;
-      background: #7ca5c9;
+      background: linear-gradient(90deg,#4f6fd7c8, #2f7cdbc8);
       color: #fff;
       border: none;
       border-radius: 5px;
@@ -98,7 +98,7 @@ body{
     }
 
     button:hover {
-      background: #556e84;
+      background: linear-gradient(90deg, #2f7cdbb8, #6783deb8);
     }
 
     .footer-text {
@@ -106,28 +106,6 @@ body{
       margin-top: 15px;
       font-size: 13px;
       color: #666;
-    }
-
-    /* Footer */
-    footer {
-      background: #1e1e1e;
-      color: #ffffff;
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-    }
-
-    footer p {
-      margin: 6px 0;
-    }
-
-    footer a {
-      color: #b9a9ff;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
     }
 
     /* Responsive */
@@ -146,27 +124,14 @@ body{
       }
     }
 
-    #footer  {
-      background-color: #556e84;
-    } 
-
-    #footer-links a {
-      color: white;
-      margin: 20px 200px;
-    }
-
-    #legal-links a {
-      color: white;
-      margin: 20px 0;
-    }
-
-    #contact-info p {
-      margin: 20px 0;
-    }
 
     #login-link {
     margin: 10px 0 0 100px;
      color: #3a3a3a;
-     text-decoration: none;
+    }
+
+    #login-link a {
+      color: #3a3a3a;
+      text-decoration: none;
     }
 

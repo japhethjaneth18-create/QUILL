@@ -13,6 +13,7 @@
 /* hello samuel..*/
     /* HEADER */
     header {
+      width: 100%;
       display: flex;
       margin: auto;
       align-items: center;
@@ -234,7 +235,6 @@
 
     /* JOURNAL CATEGORIES */
     .section {
-      padding: 20px 20px 20px 20px;
     }
 
     .section h3 {
@@ -297,7 +297,7 @@
   font-size: 20px;
   text-indent: 200px;
   background: linear-gradient(135deg,#b3fae08e,#5f94ef8e);
-  color: cornflowerblue;
+  color: rgb(6, 55, 146);
   
 }
 
