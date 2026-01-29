@@ -62,7 +62,7 @@ body {
 }
 
 .card-back {
-  background: #ffffff;
+  background: linear-gradient(54deg,#4f6fd769, #2f7cdbdb);
   color: #333;
   transform: rotateY(180deg);
   display: flex;
