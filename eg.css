@@ -14,11 +14,12 @@
       margin: 0;
       font-family: 'Inter', sans-serif;
       color: #111;
-      background-color: #ffffff;
+      background-color: #f3f4f6;
     }
 /* hello samuel..*/
     /* HEADER */
     header {
+      background: #ffffff;
       width: 100%;
       display: flex;
       margin: auto;
@@ -32,19 +33,6 @@
       font-size: 24px;
     }
 
-
-
-
-    @media (max-width:600px)
-{
-    span {
-      width: 105px;
-    }
-
-    nav a span{
-      margin-left: 200px;
-    }
-}
 
     nav {
       position: relative;
@@ -84,6 +72,26 @@
 
   @media (max-width:575.98px) 
    {
+
+
+    nav {
+      visibility: hidden;
+    }
+
+    nav a {
+      font-size: 13px;  
+      width: 45%;
+      padding: 0 0 0 0;
+    }
+
+      nav span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 55px;
+      height: 100%;
+      }
+
     nav a:nth-child(1):hover~span{
       left: 0px;
       cursor: pointer;
@@ -102,18 +110,22 @@
 
 @media (min-width: 768px) and (max-width: 991.98px) 
 {
+  nav {
+    width: 350px;
+    margin-left: 215px;
+  }
     nav a:nth-child(1):hover~span{
       left: 0px;
       cursor: pointer;
     }
     nav a:nth-child(2):hover~span{
-      left: 80px;
+      left: 90px;
     }
     nav a:nth-child(3):hover~span{
-      left: 160px;
+      left: 170px;
     }
     nav a:nth-child(4):hover~span{
-      left: 243px;
+      left: 258px;
     }
   }
 @media (min-width: 992px) and (max-width: 1199.98px) 
@@ -283,7 +295,7 @@
 
     .section h3 {
       font-size: 28px;
-      margin-bottom: 40px;
+      margin: 40px;
       text-align: center;
     }
 
@@ -346,11 +358,12 @@
 }
 
 /* Images */
-.flip-card-front img,
-.flip-card-back img {
+.flip-card-front img
+ {
   width: 100%;
   height: 100%;
   object-fit: cover;
+
 }
 
 /* Back side */
@@ -429,6 +442,9 @@
       height: 50px;
     }
 
+    .navbar img {
+        width: 20px;
+    }
     .navbar:hover img {
       margin-right: 15px;
     }

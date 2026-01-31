@@ -46,8 +46,8 @@ body {
 }
 
 .card-front {
-  background: #000;
-  color: white;
+background-color: rgba(97, 155, 226, 0.485);
+  color: rgb(4, 3, 3);
 }
 
 .card-front img {
@@ -62,6 +62,8 @@ body {
 }
 
 .card-back {
+  width: 85%;
+  height: 90%;
   background: linear-gradient(54deg,#4f6fd769, #2f7cdbdb);
   color: #333;
   transform: rotateY(180deg);
@@ -94,11 +96,56 @@ body {
   margin-top: 15px;
   padding: 10px 25px;
   border: none;
-  background: #2563eb;
+  background: linear-gradient(90deg, #cd5cf2d5,#6a82efdc);
   color: white;
   border-radius: 6px;
   cursor: pointer;
 }
+
+.journal button:hover {
+    background: linear-gradient(
+    270deg,
+    #007bffb7,
+    #00c6ffb7,
+    #7524cbb7,
+    #007bffb7
+  );
+  background-size: 600% 600%;
+
+  /* Animation */
+  animation: bg-pan 6s ease infinite;
+}
+
+/* Background pan animation */
+@keyframes bg-pan {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+    .pan-btn {
+        animation: none;
+  }
+
+  .pan-btn:hover {
+        animation: bg-pan 3s ease infinite;
+  }
+
+  .pan-btn {
+    transition: transform 0.3s ease;
+  }
+
+  .pan-btn:hover {
+    transform: scale(1.05);
+  }
+
+
 
 .hidden {
   display: none;
