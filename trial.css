@@ -45,3 +45,44 @@ body {
     transform: translate(15px, -15px); 
 }
 
+.gallery {
+  display: flex;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* Swing-in animation */
+.swing-in {
+  opacity: 0;
+  transform: rotate(-15deg) translateY(-50px);
+  transform-origin: top center;
+  animation: swingIn 1s ease-out forwards;
+}
+
+/* Delays for staggered effect */
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+
+/* Keyframes */
+@keyframes swingIn {
+  0% {
+    opacity: 0;
+    transform: rotate(-15deg) translateY(-50px);
+  }
+  60% {
+    opacity: 1;
+    transform: rotate(10deg) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) translateY(0);
+  }
+}
