@@ -63,7 +63,7 @@ body {
 .card-back {
   width: 85%;
   height: 90%;
-  background: linear-gradient(54deg,#4f6fd769, #2f7cdbdb);
+  background: linear-gradient(54deg, color-mix(in srgb, rgba(0, 0, 255, 0.805) 20%, white), #689ee1c6);
   color: #333;
   transform: rotateY(180deg);
   display: flex;
