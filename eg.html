@@ -5,24 +5,26 @@
   <title>Quill</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="images/quill.svg">
+  <script src="script.js" defer></script>
   <link rel="stylesheet" href="eg.css">
 </head>
 <body>
 
 <header>
-  <div class="side-bar">
-       <img src="images/hamburger-menu.svg" alt="Menu" width="30px">
-          <div class="side-bar-items">
+<!-- Menu Icon -->
+<div class="menu-icon" onclick="openSidebar()">☰</div>
+
+<!-- Overlay -->
+<div id="overlay" class="overlay" onclick="closeSidebar()"></div>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
             <a href="create-journal.html">Journals</a>
             <a href="about-us.html">About</a>
             <a href="login.html">Login</a>
             <a href="sign-up.html">Sign up</a>
-              <span></span>
 
-   </div>
-
-
-  </div>
+</div>
 
 <img class="quill-logo" src="images/quill.svg" alt="Quill Logo"> 
 <nav>
@@ -41,7 +43,7 @@
                 <p>Your gateway to personal growth and a safe journey towards success.</p>
     <div class="nav-buttons">
                 <button class="btn">
-            <a href="create-journal.html">Explore Journals</a>
+            <a href="create-journal.html">Create Journals</a>
         </button> 
         
 
@@ -308,7 +310,7 @@
 
     <div id="contact-info">
         <p><a href="https://web.whatsapp.com/"><img src="images/whatsapp_icon.svg" alt="WhatsApp" width="20px"></a> +255 742 939 916</p> 
-        <p><a href="japhethjaneth18@gmail.com"><img src="images/envelope2.vsg.svg" alt="Email to us" width="20px"></a> japhethjaneth18@gmail.com</p>
+        <p><a href="https://mail.google.com/mail/u/0/#inbox"><img src="images/envelope2.vsg.svg" alt="Email to us" width="20px"></a> japhethjaneth18@gmail.com</p>
     </div>
 
 
